@@ -309,7 +309,7 @@
 	var baseURL = __webpack_require__(2).baseURL();
 
 	var foodsAPIFetch = function foodsAPIFetch(id, method, body) {
-	  return fetch(baseURL + '/api/v1/foods/' + id, {
+	  return fetch(baseURL + '/api/v1/foods/' + id, { 'mode': 'no-cors' }, {
 	    method: '' + method,
 	    body: JSON.stringify(body)
 	  });
