@@ -311,7 +311,6 @@
 	var foodsAPIFetch = function foodsAPIFetch(id, method, body) {
 	  return fetch(baseURL + '/api/v1/foods/' + id, {
 	    method: '' + method,
-	    headers: { 'Content-Type': 'application/json' },
 	    body: JSON.stringify(body)
 	  });
 	};
